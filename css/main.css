@@ -137,12 +137,6 @@ div.footer {
 	bottom: 0;
 }
 
-@media (max-height: 500px) {
-	div.footer {
-		display: none;
-	}
-}
-
 div.footer ul.left {
 	float: left;
 }
@@ -150,6 +144,7 @@ div.footer ul.left {
 div.footer ul.right {
 	float:right;
 	padding-right: 40px;
+	overflow: visible;
 }
 
 div.footer li{
@@ -160,3 +155,21 @@ div.footer li{
 	vertical-align: bottom;
 }
 
+/*MEDIA*/
+
+@media (max-width: 414px) {
+	.profile {
+		display: none;
+	}
+
+	.cta input {
+		width: 80%;
+	}
+
+	div.footer ul.left {
+		padding: 0;
+		float: none;
+		width: 206px;
+		margin: 0 auto;
+	}
+}
