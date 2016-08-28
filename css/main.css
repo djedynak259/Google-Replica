@@ -100,7 +100,7 @@ div.navigation a:hover {
  	font-size: 16px;
  	margin: 0 auto;
  	padding: 5px;
- 	width: 45%;
+ 	width: 55%;
  }
 
  .search {
@@ -144,6 +144,7 @@ div.footer ul.left {
 div.footer ul.right {
 	float:right;
 	padding-right: 40px;
+	padding-left: 10px;
 	overflow: visible;
 }
 
@@ -157,13 +158,15 @@ div.footer li{
 
 /*MEDIA*/
 
-@media (max-width: 414px) {
-	.profile {
-		display: none;
-	}
-
+@media (max-width: 800px){
 	.cta input {
 		width: 80%;
+	}
+}
+
+@media (max-width: 475px) {
+	.profile {
+		display: none;
 	}
 
 	div.footer ul.left {
